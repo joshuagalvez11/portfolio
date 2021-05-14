@@ -62,3 +62,55 @@ a{
     color: var(--dark-blue);
     font-size: 90%;
 }
+
+.work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.snippet{
+    border: 2px solid var(--purple);
+    font-size: 150%;
+    flex: 0 0 45%;
+    margin: 2%
+}
+.snippet h2{
+    color: var(--pink);
+    font-size: 200%;
+    text-align: center;
+}
+.snippet p{
+    color: var(--green);
+}
+.screenshot img{
+    margin: 3%;
+    border-radius: 10px;
+    width: 90%
+}
+
+.snippet1{
+    border: 2px solid var(--purple);
+    font-size: 150%;
+}
+.snippet1 h2{
+    color: var(--pink);
+    font-size: 200%;
+    text-align: center;
+}
+.snippet1 p{
+    color: var(--green);
+}
+.screenshot1 img{
+    margin: 3%;
+    border-radius: 10px;
+    width:90%;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    * {
+      flex-direction: column;
+    }
+  }
