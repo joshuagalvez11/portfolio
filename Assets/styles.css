@@ -1,15 +1,16 @@
 :root {
     --green: rgb(7, 223, 169);
     --pink: rgb(209, 59, 172);
-    --purple: rgb(155, 155, 214);
+    --purple: rgb(156, 156, 226);
     --dark-blue: rgb(12, 3, 56);
 }
 body{
-    background-color: var(--dark-blue);
+    background-color: rgb(12, 3, 46);
 }
 a{
     color: var(--purple);
 }
+
 .header{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -32,13 +33,10 @@ a{
 .header ul {
     list-style-type: none;
 }
-
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
-    color: blanchedalmond;
 }
-
 .hero{
     height: 400px;
     width: 100%;
@@ -53,6 +51,12 @@ a{
     margin: 2%;
     font-size: 180%;
 }
+.about-me h2{
+    color: var(--pink);
+    font-size: 60px;
+    text-align: center;
+    display: block;
+}
 .about-me h3{
     color: var(--green);
     font-size: 90%;
@@ -60,7 +64,7 @@ a{
 .about-me p, .about-me ul{
     background-color: var(--purple);
     color: var(--dark-blue);
-    font-size: 90%;
+    font-size: 80%;
 }
 
 .work{
@@ -70,14 +74,29 @@ a{
     flex-grow: 1;
     justify-content: space-around;
 }
+.work-header{
+    color: var(--pink);
+    font-size: 60px;
+    text-align: center;
+    display: block;
+}
+.work h2{
+    color: var(--pink);
+    font-size: 200%;
+    text-align: center;
+    display: block;
+}
 .snippet{
     border: 2px solid var(--purple);
     font-size: 150%;
     flex: 0 0 45%;
     margin: 2%
 }
+.snippet:hover{
+    opacity: 90%;
+}
 .snippet h2{
-    color: var(--pink);
+    color: var(--purple);
     font-size: 200%;
     text-align: center;
 }
@@ -90,12 +109,15 @@ a{
     width: 90%
 }
 
+.snippet1:hover{
+    opacity: 70%;
+}
 .snippet1{
     border: 2px solid var(--purple);
     font-size: 150%;
 }
 .snippet1 h2{
-    color: var(--pink);
+    color: var(--purple);
     font-size: 200%;
     text-align: center;
 }
@@ -108,9 +130,21 @@ a{
     width:90%;
 }
 
+.contact{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--pink);
+}
+.contact ul{
+    list-style: none;
+}
+.contact ul:hover{
+    color: var(--green);
+}
+
 @media screen and (max-width: 768px) {
     main,
-    * {
+    .work {
       flex-direction: column;
     }
   }
