@@ -1,1 +1,1 @@
-This is a portfolio website with information aboutme, my work and project, and my contact information. Enjoy
+This is a portfolio website with information about me, my work and project, and my contact information. Enjoy
